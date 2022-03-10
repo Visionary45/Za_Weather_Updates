@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="16dp"
+    android:onClick="ClickLogo"
+    android:src="@drawable/bgimg"
+    tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    tools:ignore="MissingConstraints" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:onClick="ClickHome"
+    tools:ignore="MissingConstraints" >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Home"
+        android:padding="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/ic_home"
+        tools:ignore="RtlCompat" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:onClick="ClickSettings"
+    tools:ignore="MissingConstraints">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="12dp"
+        android:text="Settings"
+        android:layout_marginStart="16dp"
+        tools:ignore="RtlCompat" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/ic_settings"
+        tools:ignore="RtlCompat" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:onClick="ClickHelp"
+        tools:ignore="MissingConstraints" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Help &amp; Feedback"
+            android:padding="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/ic_help"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/lightgrey"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Other"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:onClick="ClickPolicy"
+        tools:ignore="MissingConstraints" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Policy"
+            android:padding="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/ic_check"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickInfo"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:text="@string/about_us"
+            android:layout_marginStart="16dp"
+            tools:ignore="RtlCompat" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/ic_info"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:onClick="ClickExit"
+    tools:ignore="MissingConstraints">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/close"
+        android:padding="12dp"
+        android:layout_marginStart="16dp"
+        tools:ignore="RtlCompat" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/ic_exit"
+        tools:ignore="RtlCompat" />
+</LinearLayout>
+</LinearLayout>

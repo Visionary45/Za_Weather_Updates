@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashScreen" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+    <style name="ShapeAppearance.MyApp.SmallComponent" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">3dp</item>
+    </style>
+    <style name="ThemeOverlay.Design.TextInputEditText.Outlined" parent="">
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+</resources>

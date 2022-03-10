@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/weathrID"
+                android:layout_marginTop="5dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="8dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="2dp"
+                        android:fontFamily="@font/proletarsk"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/imgCndtion"
+                        android:src="@drawable/sunny"
+                        android:layout_gravity="center" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtmxTemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:fontFamily="@font/avenirltstdbook"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtmnTemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:fontFamily="@font/avenirltstdbook"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtCndtion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text=""
+                            android:fontFamily="@font/avenirltstdbook"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="90dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/moreFcst"
+                    android:layout_below="@id/weathrID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingTop="220dp"/>
+            </androidx.core.widget.NestedScrollView>
+
+
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottomAppBar"
+                android:layout_gravity="bottom"
+                style="@style/Widget.MaterialComponents.BottomAppBar"
+                app:navigationIcon="@drawable/ic_menu"
+                app:hideOnScroll="true"
+                app:menu="@menu/bottom_app_bar"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/loction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location"
+                app:backgroundTint="@color/white"
+
+                app:layout_anchor="@id/bottomAppBar" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/ldBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
